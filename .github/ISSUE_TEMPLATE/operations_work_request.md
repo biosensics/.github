@@ -1,4 +1,11 @@
 ---
+name: Operations Work Request
+about: Request for engineering work
+title: 'Operations Work Request'
+labels: 
+assignees: '@abbylindsay'
+
+---
 
 **Describe the work you would like completed:**
 <!-- A clear and concise description of what the problem is and your proposed solution -->
