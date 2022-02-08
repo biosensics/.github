@@ -6,19 +6,43 @@ on:
     types: 
       - opened
 
-# read the new created issue
-# go through each checkboxes
-# create new issue for each checkboxes
-# link each new issue to specific person / group
+# first job test workflow run correct.
 jobs:
-  test_first_job:
+  print_job:
     name: "first job test"
     runs-on: ubuntu-latest
     if: startsWith(github.event.issue.title, 'V&V Request')
     steps:
       - name: Print something
         env:
-          VAR: Hello World
-          VAR2: HA HA HA
-        run: |
-          echo $VAR $VAR2.
+          VAR: You got here!
+          VAR2: There is a V&V Request issue~
+        run: echo $VAR $VAR2
+
+  create_issue:
+    name: "create a new issue"
+    runs-on: ubuntu-latest
+    needs: print_job
+    permissions:
+      issues: write
+    steps:
+      - name: Create Random Issue
+        uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
+        with:
+          assignees: "YiqianDeng"
+          labels: "v&v created issue"
+          title: "title"
+          body: |
+            ### Test
+
+            - [ ] first step
+            - [ ] second step
+            - [ ] third step
+
+            ### Point
+            some points
+
+          pinned: false
+          close-previous: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
