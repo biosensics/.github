@@ -1,24 +1,19 @@
-name: "Create issue"
-description: create issues base on an original issue
-assignees:
-  - someone
+name: "detect V&V issue and create a new issue"
 
 # run on new issue open
 on:
-  issue:
-    types: [opened]
+  issues:
+    types: 
+      - opened
 
 # read the new created issue
 # go through each checkboxes
 # create new issue for each checkboxes
 # link each new issue to specific person / group
 jobs:
-  create new issue:
-    name: "Create a new issue"
+  create_issue:
     runs-on: ubuntu-latest
     # if v&v checklist
     if: startsWith(github.event.issue.title, 'V&V Request')
     steps:
-      - name: create issue
-      - body: |
-        This issue created in response to this V&V Request issue: #${{ github.event.issue.number }}.
+      - name: create issue test
