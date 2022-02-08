@@ -8,25 +8,26 @@ on:
 
 # first job test workflow run correct.
 jobs:
-#   print_job:
-#     name: "first job test"
-#     runs-on: ubuntu-latest
-#     if: startsWith(github.event.issue.title, 'V&V Request')
-#     steps:
-#       - name: Print something
-#         env:
-#           VAR: You got here!
-#           VAR2: There is a V&V Request issue~
-#         run: echo $VAR $VAR2
+  print_job:
+    name: "first job test"
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'V&V Request')
+    steps:
+      - name: Print something
+        env:
+          VAR: You got here!
+          VAR2: There is a V&V Request issue~
+        run: echo $VAR $VAR2
 
   read_current_issue:
     name: "read current issue"
     runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'V&V Request')
     steps:
       - name: read issue title
         env:
           CURRENT_ISSUES_TITLE: ${{ github.event.issue.title }}
-          CURRENT_ISSUES_ID: ${{ github.event.id }}
+          CURRENT_ISSUES_ID: ${{ github.event.issue.number }}
         run: |
           echo CURRENT_ISSUES_TITLE: $CURRENT_ISSUES_TITLE
           echo CURRENT_ISSUES_ID: $CURRENT_ISSUES_ID
