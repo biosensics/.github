@@ -11,9 +11,14 @@ on:
 # create new issue for each checkboxes
 # link each new issue to specific person / group
 jobs:
-  create_issue:
+  test_first_job:
+    name: "first job test"
     runs-on: ubuntu-latest
-    # if v&v checklist
     if: startsWith(github.event.issue.title, 'V&V Request')
     steps:
-      - name: create issue test
+      - name: Print something
+        env:
+          VAR: Hello World
+          VAR2: HA HA HA
+        run: |
+          echo $VAR $VAR2.
