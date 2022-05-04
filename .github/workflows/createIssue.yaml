@@ -8,71 +8,28 @@ on:
 
 # first job test workflow run correct.
 jobs:
-  print_job:
+  automation_job:
     name: "first job test"
     runs-on: ubuntu-latest
+    env:
+      # add all environment variables
+      CURRENT_OWNER: ${{ github.repository_owner }}
+      CURRENT_REPO: ${{ github.event.repository.name }}
+      CURRENT_ISSUES_TITLE: ${{ github.event.issue.title }}
+      CURRENT_ISSUES_ID: ${{ github.event.issue.number }}
+      ENTRY_POINT: node entry.js
     permissions:
       issues: read
     if: startsWith(github.event.issue.title, 'V&V Request')
     steps:
-      - name: Print to track
-        env:
-          VAR: You got here!
-          VAR2: There is a V&V Request issue~
-        run: echo $VAR $VAR2
-      - name: Read current issue info
-        env:
-          CURRENT_ISSUES_TITLE: ${{ github.event.issue.title }}
-          CURRENT_ISSUES_ID: ${{ github.event.issue.number }}
+      # setup secret access token
+      - uses: actions/checkout@v2
+        with:
+          ref: main
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+      - name: Install environment
         run: |
-          echo CURRENT_ISSUES_TITLE: $CURRENT_ISSUES_TITLE
-          echo CURRENT_ISSUES_ID: $CURRENT_ISSUES_ID
-      - name: Test read issue body
-        env:
-          BODY: ${{ github.event.issue.body }}
-        run: echo BODY
-        
-
-  # read_current_issue:
-  #   name: "read current issue"
-  #   runs-on: ubuntu-latest
-  #   if: startsWith(github.event.issue.title, 'V&V Request')
-  #   steps:
-  #     - name: read issue title
-  #       env:
-  #         CURRENT_ISSUES_TITLE: ${{ github.event.issue.title }}
-  #         CURRENT_ISSUES_ID: ${{ github.event.issue.number }}
-  #       run: |
-  #         echo CURRENT_ISSUES_TITLE: $CURRENT_ISSUES_TITLE
-  #         echo CURRENT_ISSUES_ID: $CURRENT_ISSUES_ID
-
-
-
-  # create_issue:
-  #   name: "create a new issue"
-  #   runs-on: ubuntu-latest
-  #   needs: print_job
-  #   if: startsWith(github.event.issue.title, 'V&V Request')
-  #   permissions:
-  #     issues: write
-  #   steps:
-  #     - name: Create Random Issue
-  #       uses: imjohnbo/issue-bot@3daae12aa54d38685d7ff8459fc8a2aee8cea98b
-  #       with:
-  #         assignees: "YiqianDeng"
-  #         labels: "v&v created issue"
-  #         title: "test create random issue by create a V&V request"
-  #         body: |
-  #           ### Test
-
-  #           - [ ] first step
-  #           - [ ] second step
-  #           - [ ] third step
-
-  #           ### Point
-  #           some points
-
-  #         pinned: false
-  #         close-previous: false
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          npm install octokit
+          echo npm installed
+      - name: Run script
+        run: $ENTRY_POINT $CURRENT_OWNER $CURRENT_REPO $CURRENT_ISSUES_ID
