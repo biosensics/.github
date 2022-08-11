@@ -1,0 +1,99 @@
+name: "Clone Issue"
+
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  clone-issue:
+    name: "Clone Issue"
+    if: github.event.label.name == 'clone' && startsWith(github.event.issue.title, 'Clone')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ secrets.ROBOT_PERSONAL_ACCESS_TOKEN }}
+    outputs:
+      url_count: steps.original_url.outputs.url_count
+      original_url: steps.original_url.outputs.issue_url
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.ROBOT_PERSONAL_ACCESS_TOKEN }}
+          submodules: recursive
+      - name: "Get Original Issue URL"
+        id: original_url
+        continue-on-error: true
+        env:
+          BODY: ${{ github.event.issue.body }}
+        shell: bash
+        run: |
+          ISSUE_URLS=$(echo $BODY | grep -oE '\bhttps://github\.com/[[:alnum:]-]+/[[:alnum:]_.-]+/issues/[[:digit:]]+\b'  || [[ $? -eq 1 ]])
+          URL_COUNT=$(echo $ISSUE_URLS | wc -w)
+          echo $URL_COUNT
+          echo "::set-output name=issue_url::$ISSUE_URLS"
+          echo "::set-output name=url_count::$URL_COUNT"
+      - name: "Comment if too many URLs"
+        if: steps.original_url.outputs.url_count > 1
+        shell: bash
+        run: |
+          gh issue close ${{github.event.issue.number}} -c 'Too many issue URLs present! Please try again and only include a single issue link in the body.'
+          exit 1
+      - name: "Comment if no URL"
+        if: steps.original_url.outputs.url_count < 1
+        shell: bash
+        run: |
+          gh issue close ${{github.event.issue.number}} -c 'No issue URL found! Please try again and ensure the URL of the original issue is in the body.'
+          exit 1
+      - name: "Get content of original issue"
+        id: original_content
+        env:
+          ORIGINAL_URL: ${{ steps.original_url.outputs.issue_url }}
+        shell: bash
+        run: |
+          ISSUE_CONTENT=$(gh issue view $ORIGINAL_URL --json title,body,labels -q '{title,body,labels: .labels|map(.name)}')
+          echo "::set-output name=issue_content::$ISSUE_CONTENT"
+      - name: "Comment with original content"
+        env:
+          TITLE: ${{ fromJSON(steps.original_content.outputs.issue_content).title }}
+          BODY: ${{ fromJSON(steps.original_content.outputs.issue_content).body }}
+        shell: bash
+        run: |
+          BODY=$(echo $BODY | sed 's/\n/\n> /g')
+          echo -e "This issue is a clone of the issue found here: $ORIGINAL_URL\nAt time of cloning, the original issue was as follows:" > issue_body.md
+          echo -e "\n> # $TITLE\n>$BODY" >> issue_body.md
+          gh issue comment ${{github.event.issue.number}} -F issue_body.md
+      - name: "Add labels"
+        env:
+          LABELS: ${{ join(fromJSON(steps.original_content.outputs.issue_content).labels,',') }}
+          ORIGINAL_URL: ${{ steps.original_url.outputs.issue_url }}
+        shell: bash
+        run: |
+          ORIGINAL_REPO=${ORIGINAL_URL%issues/*}
+          gh label list -R $ORIGINAL_REPO > orig_labels.txt
+          gh label list > repo_labels.txt
+          OIFS=$IFS
+          IFS=','
+          read -a LABEL_ARR <<< "$LABELS"
+          for l in ${LABEL_ARR[@]}
+          do
+            label_count=$(grep -c "^$l" repo_labels.txt || [[ $? -eq 1 ]])
+            if [ $label_count -gt 0 ]
+            then
+              echo "Label '$l' already exists"
+              continue
+            fi
+            echo "Cloning label '$l' from original issue's repo"
+            IFS=$'\t' read -a ORIG_LABEL <<< $(grep -m 1 "^$l" orig_labels.txt)
+            if [ -z ${ORIG_LABEL[2]} ]
+            then
+              gh label create "${ORIG_LABEL[0]}" -c "${ORIG_LABEL[1]}"
+            else
+              gh label create "${ORIG_LABEL[0]}" -d "${ORIG_LABEL[1]}" -c "${ORIG_LABEL[2]}"
+            fi
+            echo "Label '$l' created"
+          done
+          IFS=$OIFS
+          
+          echo "Setting labels"
+          gh issue edit ${{github.event.issue.number}} --add-label "$LABELS"
+
+        
