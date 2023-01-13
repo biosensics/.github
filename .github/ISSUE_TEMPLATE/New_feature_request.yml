@@ -4,7 +4,7 @@ description: "Request to have a new feature or enhancement"
 title: "[New Feature]: "
 labels: ["enhancement"]
 assignees: 
-  -abbylindsay
+  -JulieMcLarnon
 
 body:
   - type: textarea
