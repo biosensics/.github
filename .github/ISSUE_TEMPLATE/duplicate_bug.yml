@@ -3,7 +3,7 @@ description: "Bug is present within multiple projets"
 title: "[Duplicate Bug]: "
 labels: ["duplicate"]
 assignees: 
-  -JulieMcLarnon
+  - JulieMcLarnon
 
 body:
   - type: textarea
@@ -21,6 +21,6 @@ body:
   - type: textarea
     attributes:
       label: "Additional Context:"
-      description: "Screenshots, app version, firmware version, etc."
+      description: "Parse Account, Device ID, Screenshots, app version, firmware version, etc."
     validations:
       required: true
