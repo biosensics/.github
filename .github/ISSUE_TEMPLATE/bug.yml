@@ -3,7 +3,7 @@ description: "Identification of a new issue"
 title: "[Bug]: "
 labels: ["bug"]
 assignees: 
-  -JulieMcLarnon
+  - JulieMcLarnon
 
 body:
   - type: textarea
