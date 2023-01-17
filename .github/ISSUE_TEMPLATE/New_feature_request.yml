@@ -4,14 +4,13 @@ description: "Request to have a new feature or enhancement"
 title: "[New Feature]: "
 labels: ["enhancement"]
 assignees: 
-  -JulieMcLarnon
+  - JulieMcLarnon
 
 body:
   - type: textarea
     attributes:
       label: Describe the work you would like completed
       description: A clear and concise description of what you would like to see and why it is needed. Include screenshots!
-      placeholder: "The play bar is covering up the bottom of the video, obscuring a portion of the video to the user, as shown in the attached screenshot"
     validations:
       required: true
   - type: textarea
@@ -48,6 +47,6 @@ body:
   - type: textarea
     attributes:
       label: Additional Context
-      description: App version, firmware version, other information?
+      description: Parse Account, Device ID, App version, firmware version, other information?
     validations:
       required: true
