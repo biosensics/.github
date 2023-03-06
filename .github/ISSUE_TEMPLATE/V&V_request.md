@@ -55,7 +55,6 @@ Application:
 - [ ] Set GitHub secrets per server configuration values and telehealth meeting room
 - [ ] APK connects to server (indicate if Test or Production and record name of CLI tools):
 - [ ] Send Application RC build to operations team for V&V
-- [ ] Link release to V&V issue
 - [ ] App link to source code:
 
 Analyzer Tool:
