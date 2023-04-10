@@ -1,0 +1,25 @@
+---
+name: V&V Execution Checklist
+about: Checklist for V&V Execution
+title: 'V&V Execution Checklist'
+labels: 
+assignees: '@scarter008'
+
+
+**@biosensics/test engineering :** 
+- [ ] Team lead determine if full or partial V&V is needed
+
+**@biosensics/engineering :** 
+- [ ] Submit ECO to Quality 
+
+**@biosensics/quality :** 
+- [ ] ECO approved 
+
+**@biosensics/operations :** 
+- [ ] Equiptment set up for V&V execution 
+- [ ] Device enrolled in Hexnode (as applicable)
+- [ ] Parse account created in correct server (as applicable)
+- [ ] Mobile device model is correct (version, iOS/Android, etc.)
+
+**@biosensics/test engineering :** 
+- [ ] V&V Executed 
