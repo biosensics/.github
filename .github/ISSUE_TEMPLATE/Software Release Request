@@ -1,0 +1,34 @@
+---
+name: Software Release Request 
+about: Checklist for Software Version Release
+title: 'Software Release Request'
+labels: 
+assignees: '@juliemclarnon'
+
+---
+***Please describe the change being requested for this software version***
+
+**Due date? Justify:**
+
+**Additional Comments?**
+
+
+***Software Release Checklist - Attempt #1:***
+
+**@biosensics/engineering :** 
+- [ ] Create apk build 
+- [ ] Create server build 
+
+**@biosensics/Test engineering :** 
+- [ ] Test apk/server build 
+
+<!-- If previous attempt fails; copy and paste Software Release Checklist below and increment attempt # -->
+
+**Checklist below is completed after passing V&V**
+
+**@biosensics/quality :** 
+- [ ] apk approved for release
+
+**@biosensics/engineering :** 
+- [ ] apk released to Development 
+- [ ] server released to Development 
