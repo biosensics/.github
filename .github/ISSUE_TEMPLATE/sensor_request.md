@@ -3,7 +3,7 @@ name: Sensor Request
 about: Request for Sensor Manufacturing
 title: 'Sensor Request'
 labels: 
-assignees: '@teresaho-biosensics'
+assignees: '@jcarlosbarbosa'
 
 ---
 ***Please title the issue with the date***
