@@ -31,23 +31,3 @@ assignees: '@teresaho-biosensics'
 | 	        |             	|             	|          	|        	  |            	          	|                                 	|
 | 	        |             	|             	|         	|        	  |            	          	|                                 	|
 | 	        |             	|             	|         	|        	  |            	          	|                                 	|
-
-
-***Requestor Fills out form until this point***
-
-
-**@biosensics/test-and-manufacturing :**
-
-**Sensor Progress Tracking:**
-
-*Project:*
-|   	| Board ID 	| Manu Tested? 	| Firmware Uploaded? 	| Welded? 	| Calibrated? 	| Epoxied? 	| Verified and Ready for Shipment?	| Issues:          |
-|---	|----------	|-------------	|-------------------	|--------	  |------------	  |---------	|---------------------------------	|----------------  |
-| 1 	|          	|             	|                   	|        	  |               |         	|                                 	|                  |
-| 2 	|          	|             	|                   	|        	  |            	  |         	|                                 	|                  |
-| 3 	|          	|             	|                   	|        	  |              	|         	|                                 	|                  |
-| 4 	|          	|             	|                   	|        	  |              	|         	|                                 	|                  |
-| 5 	|          	|             	|                   	|        	  |               |         	|                                 	|                  |
-
-
-=======
