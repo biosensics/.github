@@ -17,7 +17,7 @@ assignees: '@juliemclarnon'
 
 **@biosensics/engineering :** 
 - [ ] Create apk build 
-- [ ] Create server build 
+- [ ] Deploy test server  
 
 **@biosensics/Test engineering :** 
 - [ ] Test apk/server build 
@@ -27,8 +27,8 @@ assignees: '@juliemclarnon'
 **Checklist below is completed after passing V&V**
 
 **@biosensics/quality :** 
-- [ ] apk approved for release
+- [ ] Software passed V&V test 
 
 **@biosensics/engineering :** 
-- [ ] apk released to Development 
-- [ ] server released to Development 
+- [ ] Software release created and tagged 
+- [ ] Server deployed to production
