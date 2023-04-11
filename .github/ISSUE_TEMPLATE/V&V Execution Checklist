@@ -10,10 +10,12 @@ assignees: '@scarter008'
 - [ ] Team lead determine if full or partial V&V is needed
 
 **@biosensics/engineering :** 
-- [ ] Submit ECO to Quality 
+- [ ] Submit application ECO to Quality 
+- [ ] Submit server ECO to Quality 
 
 **@biosensics/quality :** 
-- [ ] ECO approved 
+- [ ] Application ECO approved 
+- [ ] Server ECO approved 
 
 **@biosensics/operations :** 
 - [ ] Equiptment set up for V&V execution 
