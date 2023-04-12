@@ -32,3 +32,6 @@ assignees: '@juliemclarnon'
 **@biosensics/engineering :** 
 - [ ] Software release created and tagged 
 - [ ] Server deployed to production
+
+**@biosensics/operations :** 
+- [ ] Confirm telehealth meeting room is correct on release build 
