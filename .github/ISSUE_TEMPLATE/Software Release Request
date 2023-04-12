@@ -27,7 +27,7 @@ assignees: '@juliemclarnon'
 **Checklist below is completed after passing V&V**
 
 **@biosensics/quality :** 
-- [ ] Software passed V&V test 
+- [ ] Software is approved for release 
 
 **@biosensics/engineering :** 
 - [ ] Software release created and tagged 
