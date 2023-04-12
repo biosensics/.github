@@ -18,10 +18,10 @@ assignees: '@scarter008'
 - [ ] Server ECO approved 
 
 **@biosensics/operations :** 
-- [ ] Equipment set up for V&V execution 
 - [ ] Device enrolled in MDM (as applicable)
 - [ ] Parse account created in correct server (as applicable)
 - [ ] Mobile device model is correct (version, iOS/Android, etc.)
+- [ ] Equipment set up for V&V execution 
 
 **@biosensics/test engineering :** 
 - [ ] V&V Executed 
