@@ -1,0 +1,63 @@
+name: "Demo Request"
+description: "Requesting a system for shipping a demo or use at a conference"
+title: "[Demo]: "
+labels: ["demo"]
+assignees: 
+  - JulieMcLarnon
+
+body:
+  - type: textarea
+    attributes:
+      label: Who is this demo for?
+      description: "Who are you sending this demo to? Background on who they are?"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What is the purpose?
+      description: "Be descriptive: who all will be looking at this? What is being evaluated? What is the intent?"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: What features are needed?
+      description: "E.g. Specify assessments or application needed"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Mobile device size or model needed? Number of mobile devices?
+      description: "Ex: 2 mason tablets with the most updated OS"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Will we need to retrieve the data later?
+      description: "Are we sending this to a potenial customer who might want to review this data at a later date? Or is it a conference where we are sure it will not need to be looked at again?"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Are sensors needed? If so, how many?
+      description: "PAMSys, Legsys, etc. Functional or non functional?"
+    validations:
+      required: true    
+  - type: dropdown
+    attributes:
+      label: Priority level
+      description: Indicate priority level
+      multiple: false
+      options:
+        - "1 - Within the next month"
+        - 2
+        - "3 - Within 2 weeks"
+        - 4
+        - "5 - URGENT"
+    validations:
+     required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Additional information? If priority is 5, please justify. 
+    validations:
+      required: true
