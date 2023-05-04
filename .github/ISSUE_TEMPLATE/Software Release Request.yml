@@ -1,3 +1,79 @@
+name: "Software Release Request"
+description: "Checklist for Software Version Release"
+title: "[request]: "
+labels: ["request"]
+assignees: 
+  - JulieMcLarnon
+
+body:
+  - type: textarea
+    attributes:
+      label: Please describe the change being requested for this software version
+      description: "Reason for request"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Priority level
+      description: Indicate priority level
+      multiple: false
+      options:
+        - "1 - Within the next month"
+        - 2
+        - "3 - Within 2 weeks"
+        - 4
+        - "5 - URGENT"
+    validations:
+     required: true
+  - type: textarea
+    attributes:
+      label: Specific due date?
+      description: "Justification for given due date or type N/A"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Any additional comments?
+      description: "any concerns or things to highlight prior to this specific run"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Software Release Checklist - Attempt #1:" 
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Create apk build "
+      description: "Check once apk build is complete"
+      options:
+        - label: Create apk build  
+  - type: textarea
+    attributes:
+      label: "What testing was completed?"
+      description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
+  - type: textarea
+    attributes:
+      label: "Serial Number(s)"
+      description: "Serial numbers of mobile devices"
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 name: Software Release Request 
 about: Checklist for Software Version Release
