@@ -82,7 +82,7 @@ body:
         - label: Server deployed to production
   - type: input
     attributes:
-      label: "Links to the above"
+      label: "Confirmation"
       description: "Evidence of completion of tasks above"
   - type: checkboxes
     id: go
