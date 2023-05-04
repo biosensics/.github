@@ -43,10 +43,11 @@ body:
   - type: checkboxes
     id: ready
     attributes:
-      label: "Create apk build "
+      label: "Engineering"
       description: "Check once apk build is complete"
       options:
-        - label: Create apk build  
+        - label: Create apk build 
+        - label: Deploy test server
   - type: textarea
     attributes:
       label: "What testing was completed?"
