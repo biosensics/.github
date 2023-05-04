@@ -8,6 +8,6 @@ assignees:
 body:
  - type: input
     attributes:
-      label: "Engineering"
+      label: Test Engineering
       description: "Team lead determine if full or partial V&V is needed. List sections needed."
   
