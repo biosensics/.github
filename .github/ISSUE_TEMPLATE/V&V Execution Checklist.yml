@@ -6,7 +6,7 @@ assignees:
   - scarter008
 
 body:
- - type: input
+  - type: input
     attributes:
       name: "Test Engineering"
       description: "Team lead determine if full or partial V&V is needed. List sections needed."
