@@ -64,7 +64,7 @@ body:
       value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
   - type: markdown
     attributes:
-      value: "## **Below to be completed after passing V&V**" 
+      value: "## Below to be completed after passing V&V" 
   - type: checkboxes
     id: set1
     attributes:
@@ -82,7 +82,7 @@ body:
         - label: Server deployed to production
   - type: input
     attributes:
-      label: "Confirmation"
+      value: "Confirmation"
       description: "Evidence of completion of tasks above"
   - type: checkboxes
     id: go
