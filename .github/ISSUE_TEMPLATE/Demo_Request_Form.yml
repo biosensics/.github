@@ -3,7 +3,7 @@ description: "Requesting a system for shipping a demo or use at a conference"
 title: "[Demo]: "
 labels: ["demo"]
 assignees: 
-  - JulieMcLarnon
+  - biosensics/project-managers
 
 body:
   - type: textarea
@@ -69,7 +69,7 @@ body:
   - type: checkboxes
     id: confirm-testing
     attributes:
-      label: "Was this system thouroughly tested before shipping out?"
+      label: "Was this system thoroughly tested before shipping out?"
       description: "Check once testing is completed"
       options:
         - label: I confirm I have tested the system  
