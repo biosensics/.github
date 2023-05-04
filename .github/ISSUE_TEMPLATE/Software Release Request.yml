@@ -44,7 +44,7 @@ body:
     id: ready
     attributes:
       label: "Engineering"
-      description: "Check once apk build is complete"
+      description: "Check once tasks are complete"
       options:
         - label: Create apk build 
         - label: Deploy test server
@@ -53,13 +53,12 @@ body:
       label: "What testing was completed?"
       description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
   - type: checkboxes
-    id: ready
+    id: ready1
     attributes:
-      label: "Engineering"
-      description: "Check once apk build is complete"
+      label: "Test Engineering"
+      description: "Check once tasks are complete"
       options:
-        - label: Create apk build 
-        - label: Deploy test server
+        - label: Test apk/server build
   - type: textarea
     attributes:
       label: "What testing was completed?"
