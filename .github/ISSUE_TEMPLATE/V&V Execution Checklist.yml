@@ -41,7 +41,7 @@ body:
   - type: checkboxes
     id: ready
     attributes:
-      label: "Test Engineering"
+      label: "Test Engineer"
       description: "Check once tasks are complete"
       options:
         - label: V&V Executed 
