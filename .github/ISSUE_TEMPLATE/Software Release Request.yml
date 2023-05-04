@@ -61,7 +61,7 @@ body:
         - label: Test apk/server build
   - type: markdown
     attributes:
-      value: "## If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
+      value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
   - type: markdown
     attributes:
       value: "## Checklist below is completed after passing V&V" 
