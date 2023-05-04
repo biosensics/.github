@@ -34,7 +34,7 @@ body:
   - type: textarea
     attributes:
       label: Any additional comments?
-      description: "any concerns or things to highlight prior to this specific run"
+      description: "Any concerns or things to highlight prior to this specific run"
     validations:
       required: false
   - type: markdown
@@ -50,8 +50,8 @@ body:
         - label: Deploy test server
   - type: input
     attributes:
-      label: "Evidence"
-      description: "evidence of completion of tasks above"
+      label: "#### Evidence"
+      description: "Evidence of completion of tasks above"
   - type: checkboxes
     id: set
     attributes:
