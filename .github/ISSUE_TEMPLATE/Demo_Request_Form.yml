@@ -62,6 +62,7 @@ body:
     validations:
       required: true   
   - type: checkboxes
+    id: Confirm Testing
     attributes:
       label: "Was this system thouroughly tested before shipping out?"
       description: "Check once testing is completed"
