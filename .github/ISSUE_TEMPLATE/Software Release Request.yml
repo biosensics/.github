@@ -48,10 +48,10 @@ body:
       options:
         - label: Create apk build 
         - label: Deploy test server
-  - type: textarea
+  - type: input
     attributes:
-      label: "What testing was completed?"
-      description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
+      label: "Evidence"
+      description: "evidence of completion of tasks above"
   - type: checkboxes
     id: set
     attributes:
