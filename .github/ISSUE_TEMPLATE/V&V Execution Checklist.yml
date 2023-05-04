@@ -6,9 +6,42 @@ assignees:
   - scarter008
 
 body:
-  - type: textarea
+  - type: checkboxes
+    id: ready
     attributes:
-      label: Team lead determine if full or partial V&V is needed
-      description: "list sections needed"
-    validations:
-      required: true
+      label: "Test Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Team lead determine if full or partial V&V is needed
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Submit application ECO to Quality 
+        - label: Submit server ECO to Quality 
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Quality"
+      description: "Check once tasks are complete"
+      options:
+        - label: Application ECO approved 
+        - label: Server ECO approved 
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Operations"
+      description: "Check once tasks are complete"
+      options:
+        - label: Device enrolled in MDM (as applicable)
+        - label: Parse account created in correct server (as applicable)
+        - label: Equipment set up for V&V execution 
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Test Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: V&V Executed 
