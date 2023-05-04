@@ -61,8 +61,11 @@ body:
         - label: Test apk/server build
   - type: markdown
     attributes:
-      value: "## If previous attempt fails; copy and paste Software Release Checklist below and increment attempt" 
-  - type: textarea
+      value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
+  - type: markdown
+    attributes:
+      value: "## Checklist below is completed after passing V&V" 
+- type: textarea
     attributes:
       label: "What testing wa"
       description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
