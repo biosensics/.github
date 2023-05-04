@@ -65,15 +65,15 @@ body:
       
   - type: checkboxes
     attributes:
-      label: Was this system thouroughly tested before shipping out?
+      label: "Was this system thouroughly tested before shipping out?"
   - type: textarea
     attributes:
-      label: What testing was completed?
-      description: I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc
+      label: "What testing was completed?"
+      description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
   - type: textarea
     attributes:
-      label: Serial Number(s)
-      description: Serial numbers of mobile devices
+      label: "Serial Number(s)"
+      description: "Serial numbers of mobile devices"
 
     
     
