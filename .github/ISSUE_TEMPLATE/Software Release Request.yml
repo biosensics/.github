@@ -64,7 +64,29 @@ body:
       value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
   - type: markdown
     attributes:
-      value: "## Checklist below is completed after passing V&V" 
+      value: "## Below to be completed after passing V&V" 
+  - type: checkboxes
+    id: set
+    attributes:
+      label: "Quality"
+      description: "Check once tasks are complete"
+      options:
+        - label: Software is approved for release 
+  - type: checkboxes
+    id: set
+    attributes:
+      label: "Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Software release created and tagged 
+        - label: Server deployed to production
+  - type: checkboxes
+    id: set
+    attributes:
+      label: "Operations"
+      description: "Check once tasks are complete"
+      options:
+        - label: Confirm telehealth meeting room is correct on release build (as applicable)
   - type: textarea
     attributes:
       label: "What testing wa"
