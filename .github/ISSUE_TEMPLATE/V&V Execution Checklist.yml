@@ -22,7 +22,7 @@ body:
         - label: Submit application ECO to Quality 
         - label: Submit server ECO to Quality 
   - type: checkboxes
-    id: ready
+    id: quality
     attributes:
       label: "Quality"
       description: "Check once tasks are complete"
@@ -30,7 +30,7 @@ body:
         - label: Application ECO approved 
         - label: Server ECO approved 
   - type: checkboxes
-    id: ready
+    id: ops
     attributes:
       label: "Operations"
       description: "Check once tasks are complete"
