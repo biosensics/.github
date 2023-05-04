@@ -61,7 +61,10 @@ body:
       description: "Additional information? If priority is 5, please justify." 
     validations:
       required: true   
-  - type: checkboxes
+ 
+ 
+ To be completed after the request is completed
+ - type: checkboxes
     id: confirm-testing
     attributes:
       label: "Was this system thouroughly tested before shipping out?"
