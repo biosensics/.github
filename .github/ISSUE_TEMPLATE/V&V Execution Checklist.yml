@@ -1,13 +1,14 @@
 name: "V&V Execution Checklist"
 description: "Checklist for V&V Execution"
 title: "[Checklist]: "
-labels: ["Checklist"]
+labels: ["checklist"]
 assignees: 
   - scarter008
 
 body:
-  - type: input
+  - type: textarea
     attributes:
-      name: "Test Engineering"
-      description: "Team lead determine if full or partial V&V is needed. List sections needed."
-  
+      label: full or partial
+      description: "Team lead determine if full or partial V&V is needed"
+    validations:
+      required: true
