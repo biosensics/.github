@@ -8,7 +8,7 @@ assignees:
 body:
   - type: textarea
     attributes:
-      label: full or partial
-      description: "Team lead determine if full or partial V&V is needed"
+      label: Team lead determine if full or partial V&V is needed
+      description: "list sections needed"
     validations:
       required: true
