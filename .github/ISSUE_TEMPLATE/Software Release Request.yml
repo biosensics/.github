@@ -52,6 +52,18 @@ body:
     attributes:
       label: "What testing was completed?"
       description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Engineering"
+      description: "Check once apk build is complete"
+      options:
+        - label: Create apk build 
+        - label: Deploy test server
+  - type: textarea
+    attributes:
+      label: "What testing was completed?"
+      description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
   - type: textarea
     attributes:
       label: "Serial Number(s)"
