@@ -60,9 +60,7 @@ body:
       label: Additional Context
       description: Additional information? If priority is 5, please justify. 
     validations:
-      required: true
-      
-      
+      required: true   
   - type: checkboxes
     attributes:
       label: "Was this system thouroughly tested before shipping out?"
