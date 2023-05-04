@@ -50,7 +50,7 @@ body:
         - label: Deploy test server
   - type: input
     attributes:
-      label: "<h4>Evidence</h4>"
+      label: "Evidence"
       description: "Evidence of completion of tasks above"
   - type: checkboxes
     id: set
