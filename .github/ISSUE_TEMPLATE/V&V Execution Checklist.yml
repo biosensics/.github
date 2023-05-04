@@ -7,14 +7,14 @@ assignees:
 
 body:
   - type: checkboxes
-    id: ready
+    id: lead
     attributes:
       label: "Test Engineering"
       description: "Check once tasks are complete"
       options:
         - label: Team lead determine if full or partial V&V is needed
   - type: checkboxes
-    id: ready
+    id: submit
     attributes:
       label: "Engineering"
       description: "Check once tasks are complete"
