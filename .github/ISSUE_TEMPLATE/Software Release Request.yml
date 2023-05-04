@@ -53,7 +53,7 @@ body:
       label: "What testing was completed?"
       description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
   - type: checkboxes
-    id: ready1
+    id: set
     attributes:
       label: "Test Engineering"
       description: "Check once tasks are complete"
@@ -61,7 +61,7 @@ body:
         - label: Test apk/server build
   - type: textarea
     attributes:
-      label: "What testing was completed?"
+      label: "What testing wa"
       description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
   - type: textarea
     attributes:
