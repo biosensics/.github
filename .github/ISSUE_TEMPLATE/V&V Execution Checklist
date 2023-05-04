@@ -1,3 +1,118 @@
+name: "V&V Execution Checklist"
+description: "Checklist for V&V Execution"
+title: "[Checklist]: "
+labels: ["Checklist"]
+assignees: 
+  - scarter008
+
+body:
+   - type: input
+    attributes:
+      label: "Engineering"
+      description: "Team lead determine if full or partial V&V is needed. List sections needed."
+   - type: textarea
+    attributes:
+      label: Please describe the change being requested for this software version
+      description: "Reason for request"
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Priority level
+      description: Indicate priority level
+      multiple: false
+      options:
+        - "1 - Within the next month"
+        - 2
+        - "3 - Within 2 weeks"
+        - 4
+        - "5 - URGENT"
+    validations:
+     required: true
+  - type: input
+    attributes:
+      label: Specific due date?
+      description: "Justification for given due date or type N/A"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Any additional comments?
+      description: "Any concerns or things to highlight prior to this specific run"
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: "## Software Release Checklist - Attempt #1:" 
+  - type: checkboxes
+    id: ready
+    attributes:
+      label: "Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Create apk build 
+        - label: Deploy test server
+  - type: input
+    attributes:
+      label: "Evidence"
+      description: "Evidence of completion of tasks above"
+  - type: checkboxes
+    id: set
+    attributes:
+      label: "Test Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Test apk/server build
+  - type: markdown
+    attributes:
+      value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
+  - type: markdown
+    attributes:
+      value: "## Below to be completed after passing V&V" 
+  - type: checkboxes
+    id: set1
+    attributes:
+      label: "Quality"
+      description: "Check once tasks are complete"
+      options:
+        - label: Software is approved for release 
+  - type: checkboxes
+    id: set2
+    attributes:
+      label: "Engineering"
+      description: "Check once tasks are complete"
+      options:
+        - label: Software release created and tagged 
+        - label: Server deployed to production
+  - type: input
+    attributes:
+      label: "Confirmation"
+      description: "Evidence of completion of tasks above"
+  - type: checkboxes
+    id: go
+    attributes:
+      label: "Operations"
+      description: "Check once tasks are complete"
+      options:
+        - label: Confirm telehealth meeting room is correct on release build (as applicable)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 name: V&V Execution Checklist
 about: Checklist for V&V Execution
