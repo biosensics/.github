@@ -80,6 +80,10 @@ body:
       options:
         - label: Software release created and tagged 
         - label: Server deployed to production
+  - type: input
+    attributes:
+      label: "Evidence"
+      description: "Evidence of completion of tasks above"
   - type: checkboxes
     id: go
     attributes:
@@ -87,67 +91,3 @@ body:
       description: "Check once tasks are complete"
       options:
         - label: Confirm telehealth meeting room is correct on release build (as applicable)
-  - type: textarea
-    attributes:
-      label: "What testing wa"
-      description: "I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc"
-  - type: textarea
-    attributes:
-      label: "Serial Number(s)"
-      description: "Serial numbers of mobile devices"
-
-    
-    
-    
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-name: Software Release Request 
-about: Checklist for Software Version Release
-title: 'Software Release Request'
-labels: 
-assignees: '@juliemclarnon'
-
----
-***Please describe the change being requested for this software version***
-
-**Due date? Justify:**
-
-**Additional Comments?**
-
-
-***Software Release Checklist - Attempt #1:***
-
-**@biosensics/engineering :** 
-- [ ] Create apk build 
-- [ ] Deploy test server  
-
-**@biosensics/Test engineering :** 
-- [ ] Test apk/server build 
-
-<!-- If previous attempt fails; copy and paste Software Release Checklist below and increment attempt # -->
-
-**Checklist below is completed after passing V&V**
-
-**@biosensics/quality :** 
-- [ ] Software is approved for release 
-
-**@biosensics/engineering :** 
-- [ ] Software release created and tagged 
-- [ ] Server deployed to production
-
-**@biosensics/operations :** 
-- [ ] Confirm telehealth meeting room is correct on release build (as applicable)
