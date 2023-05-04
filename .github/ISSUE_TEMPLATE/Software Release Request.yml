@@ -25,7 +25,7 @@ body:
         - "5 - URGENT"
     validations:
      required: true
-  - type: textarea
+  - type: input
     attributes:
       label: Specific due date?
       description: "Justification for given due date or type N/A"
@@ -50,7 +50,6 @@ body:
         - label: Deploy test server
   - type: input
     attributes:
-      label: "Evidence"
       description: "evidence of completion of tasks above"
   - type: checkboxes
     id: set
