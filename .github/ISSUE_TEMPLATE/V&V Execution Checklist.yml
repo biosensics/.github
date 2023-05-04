@@ -39,9 +39,9 @@ body:
         - label: Parse account created in correct server (as applicable)
         - label: Equipment set up for V&V execution 
   - type: checkboxes
-    id: ready
+    id: executed
     attributes:
-      label: "Test Engineer"
+      label: "Test Engineering"
       description: "Check once tasks are complete"
       options:
         - label: V&V Executed 
