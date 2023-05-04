@@ -58,7 +58,7 @@ body:
   - type: textarea
     attributes:
       label: Additional Context
-      description: Additional information? If priority is 5, please justify. 
+      description: "Additional information? If priority is 5, please justify." 
     validations:
       required: true   
   - type: checkboxes
