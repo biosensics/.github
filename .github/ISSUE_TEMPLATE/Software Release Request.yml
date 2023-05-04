@@ -25,7 +25,7 @@ body:
         - "5 - URGENT"
     validations:
      required: true
-  - type: input
+  - type: textarea
     attributes:
       label: Specific due date?
       description: "Justification for given due date or type N/A"
@@ -41,19 +41,15 @@ body:
     attributes:
       value: "## Software Release Checklist - Attempt #1:" 
   - type: checkboxes
-    id: ready
+    id: build
     attributes:
       label: "Engineering"
       description: "Check once tasks are complete"
       options:
         - label: Create apk build 
         - label: Deploy test server
-  - type: input
-    attributes:
-      label: "Evidence"
-      description: "Evidence of completion of tasks above"
   - type: checkboxes
-    id: set
+    id: test
     attributes:
       label: "Test Engineering"
       description: "Check once tasks are complete"
@@ -66,26 +62,22 @@ body:
     attributes:
       value: "## Below to be completed after passing V&V" 
   - type: checkboxes
-    id: set1
+    id: approved
     attributes:
       label: "Quality"
       description: "Check once tasks are complete"
       options:
         - label: Software is approved for release 
   - type: checkboxes
-    id: set2
+    id: eng
     attributes:
       label: "Engineering"
       description: "Check once tasks are complete"
       options:
         - label: Software release created and tagged 
         - label: Server deployed to production
-  - type: input
-    attributes:
-      label: "Confirmation"
-      description: "Evidence of completion of tasks above"
   - type: checkboxes
-    id: go
+    id: room
     attributes:
       label: "Operations"
       description: "Check once tasks are complete"
