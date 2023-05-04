@@ -61,3 +61,22 @@ body:
       description: Additional information? If priority is 5, please justify. 
     validations:
       required: true
+      
+      
+  - type: checkboxes
+    attributes:
+      label: Was this system thouroughly tested before shipping out?
+  - type: textarea
+    attributes:
+      label: What testing was completed?
+      description: I.e. reviewed all modules, confirmed text-to-speech was working, confirmed the application works correctly without wifi, etc
+  - type: textarea
+    attributes:
+      label: Serial Number(s)
+      description: Serial numbers of mobile devices
+
+    
+    
+    
+    
+    
