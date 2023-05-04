@@ -63,7 +63,10 @@ body:
       required: true   
  
  
-   literal_block: To be completed after the request is completed
+  - type: markdown
+    attributes:
+      value: |
+        Please complete the following once the request has been complete, then close the issue. 
  - type: checkboxes
     id: confirm-testing
     attributes:
