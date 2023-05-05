@@ -4,6 +4,7 @@ title: "[V&V]: "
 labels: ["checklist"]
 assignees: 
   - scarter008
+  - juliemclarnon
 
 body:
   - type: checkboxes
