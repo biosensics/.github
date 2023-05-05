@@ -1,6 +1,6 @@
 name: "Software Release Request"
 description: "Checklist for Software Version Release"
-title: "[request]: "
+title: "[Software Release Request]: "
 labels: ["request"]
 assignees: 
   - JulieMcLarnon
