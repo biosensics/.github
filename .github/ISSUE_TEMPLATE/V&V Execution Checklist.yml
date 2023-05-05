@@ -1,6 +1,6 @@
 name: "V&V Execution Checklist"
 description: "Checklist for V&V Execution"
-title: "[Checklist]: "
+title: "[V&V]: "
 labels: ["checklist"]
 assignees: 
   - scarter008
