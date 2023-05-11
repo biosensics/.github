@@ -3,7 +3,7 @@ description: "Requesting a system for shipping a demo or use at a conference"
 title: "[Demo]: "
 labels: ["demo"]
 assignees: 
-  - @biosensics/project-managers
+  - Biosensics/project-managers
 
 body:
   - type: textarea
