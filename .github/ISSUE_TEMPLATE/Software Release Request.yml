@@ -83,3 +83,5 @@ body:
       description: "Check once tasks are complete"
       options:
         - label: Confirm telehealth meeting room is correct on release build (as applicable)
+        - label: Confirm software is listed as most updated version on production device
+        - label: Confirm server is listed as most updated version on production device
