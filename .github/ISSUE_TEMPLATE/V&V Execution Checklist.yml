@@ -38,7 +38,8 @@ body:
       options:
         - label: Device enrolled in MDM (as applicable)
         - label: Parse account created in correct server (as applicable)
-        - label: Equipment set up for V&V execution 
+        - label: Equipment set up for V&V execution (Details on parse account login, Device info - OS version, model name, build number)
+
   - type: checkboxes
     id: executed
     attributes:
