@@ -1,0 +1,52 @@
+
+name: "Work Request"
+description: "Request for change"
+title: "[Work Request]: "
+labels: ["Work Request"]
+assignees: 
+  - JulieMcLarnon
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe the work you would like completed
+      description: A clear and concise description of what you would like to see and why it is needed. Include screenshots!
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Is this request related to a problem?
+      description: "Is this simply a new feature or is this to resolve a different issue? If it is related to a new issue, be descriptive: what should be happening? Provide examples if possible (and screenshots!)"
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe alternatives you have considered
+      description: Does this work need to be done? Is there a simpler solution?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: "When is this work needed by? Are there pending releases or demos dependant on this work?"
+      description: "Please be specific."
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Priority level
+      description: How urgent is this new feature?
+      multiple: false
+      options:
+        - "1 - nice to have"
+        - 2
+        - "3 - needed"
+        - 4
+        - "5 - crisis"
+    validations:
+     required: true
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Parse Account, Device ID, App version, firmware version, other information?
+    validations:
+      required: true
