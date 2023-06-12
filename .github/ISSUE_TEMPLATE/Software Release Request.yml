@@ -46,7 +46,7 @@ body:
       label: "Engineering"
       description: "Check once tasks are complete"
       options:
-        - label: Create apk build 
+        - label: Create APK/IPA build 
         - label: Deploy test server
   - type: checkboxes
     id: test
@@ -54,7 +54,7 @@ body:
       label: "Test Engineering"
       description: "Check once tasks are complete"
       options:
-        - label: Test apk/server build
+        - label: Test APK/IPA and/or server build
   - type: markdown
     attributes:
       value: "If previous attempt fails; copy and paste Software Release Checklist below and increment attempt #" 
