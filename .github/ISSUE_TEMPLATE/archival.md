@@ -1,16 +1,16 @@
 ---
 name: Archival Checklist
 about: Checklist for Archival
-title: 'Archical Checklist'
+title: 'Archival Checklist'
 labels: 
-assignees: '@abbylindsay'
+assignees: '@JulieMcLarnon'
 ---
 
 Archival Checklist:
 - [ ] Get LogDNA server logs from S3
 - [ ] Back up of application source code
 - [ ] Back up of server software code
-- [ ] Back up of data processing code
+- [ ] Research to back up data processing code
 - [ ] Back up of production database
 - [ ] Audit Logs
 - [ ] Collect relevant screenshots
