@@ -4,6 +4,12 @@ title: "[BDH Screenshot Request]: (language here)"
 labels: ["checklist"]
 
 body:
+  - type: textarea
+    attributes:
+      label: Additional Context
+      description: Translation files or anything else needed for this task
+    validations:
+      required: true
   - type: checkboxes
     id: home
     attributes:
