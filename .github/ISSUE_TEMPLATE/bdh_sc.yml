@@ -1,0 +1,95 @@
+name: "BDH Screenshot Request"
+description: "Checklist for Translation Screenshots"
+title: "[BDH Screenshot Request]: (language here)"
+labels: ["checklist"]
+
+body:
+  - type: checkboxes
+    id: home
+    attributes:
+      label: "BioDigit HOME"
+      description: "Check once tasks are complete"
+      options:
+        - label: Home screen before midnight on first day of deployment (thank you for participating...)
+        - label: Home screen showing Your assessments are due (day 2)
+        - label: Home screen after completing first questionairre
+        - label: Settings screen
+        - label: Volume dialog on settings screen
+        - label: Brightness dialog on settings screen
+        - label: Your assessments are due dialog
+        - label: Questionnaire menu with MG-ADL-PRO
+        - label: Dialog showing These clinical questionairres must be completed over the phone
+        - label: Questionnaire menu with MGADL, EQ-5D-5L, PROMIS GH, PROMIS Dyspnea
+        - label: Dialog for ... will be marked as completed in clinic
+        - label: Unknown error dialog
+        - label: No assessments available dialog
+        - label: Assessment complete dialog (no score)
+        - label: PIN recovery screen with invalid recovery code, please enter 6 digit, and your pin codes dont match
+        - label: PIN recovery error dialog Please enter a valid recovery code and please enter a 6-digit numeric PIN code
+        - label: PIN recovery page without inputs
+        - label: PIN code recovery reset success dialog
+        - label: PIN code entry screen (main entry screen, not recovery)
+        - label: PIN code error dialog (wrong pincode)
+  - type: checkboxes
+    id: clinic
+    attributes:
+      label: "BioDigit CLINIC"
+      description: "Check once tasks are complete"
+      options:
+        - label: Login Screen
+        - label: Info Dialog
+        - label: Unknown Error has occured
+        - label: Create Account
+        - label: Create Account Invalid Email, invalid temp pw, invalid pw, not matching pw
+        - label: You have successfully created an account dialog
+        - label: Please enter a valid temporary password dialog
+        - label: An account with this email already exists dialog
+        - label: Please enter your verified email. must be 8 chars and include one number + your passwords do not match
+        - label: Reset Password screen
+        - label: Forgot password dialog
+        - label: Thank you- temporary password has been sent dialog
+        - label: You have successfully reset your password dialog
+        - label: Please check your cellularl connection dialog
+        - label: Login screen
+        - label: You must create an account using your verified email and password dialog
+        - label: Login screen showing Please enter password that is at least 8 chars...
+        - label: Please enter a valid email and passsword dialog
+        - label: New subject creation
+        - label: Error dialog Please create a new subject
+        - label: New subject screen with text entered
+        - label: The subject ID already exists dialog
+        - label: Start visit with subject dropdown expanded
+        - label: Start visit with Visit dropdown expanded
+        - label: Error the visit has already been completed dialog
+        - label: Please select a subject ID and visit to begin a visit
+        - label: Home screen after starting visit
+        - label: Are you sure dialog after trying to LOGOUT without completing all tasks
+        - label: Same dialog but trying to END VISIT without copmleting all tasks
+        - label: Questionairre menu
+        - label: Assessment has already been completed dialog
+        - label: Questionnaire score dialog, are you sure you want to submit?
+        - label: Retry justification dialog
+        - label: Are you sure you want to submit (no score)
+        - label: Speech assessment menu
+        - label: Counting test instructions
+        - label: Please plug in external microphone
+        - label: Counting instruction countdown
+        - label: Counting test
+        - label: The microphone was unplugged during test
+        - label: Retry justification for counting test
+        - label: Same as above but with all syllable repetitions
+        - label: Visit complete dialog
+        - label: Inactivity warning dialog
+        - label: Sensor information
+        - label: Error dialog on sensor information because invalid sensor ID
+        - label: The hand dropdown on sensor information
+        - label: Error dialog Please complete all fields before submitting
+        - label: Confirmation dialog on the sensor information submit
+        - label: Error dialog for this module has already been completed
+        - label: Subject has completed the baseline visit dialog
+        - label: Settings screen
+        - label: Brightness dialog on settings screen
+        - label: Language dropdown 
+        - label: Support dialog on Settings screen
+        
+        
