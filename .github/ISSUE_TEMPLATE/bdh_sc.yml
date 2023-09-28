@@ -13,89 +13,182 @@ body:
   - type: checkboxes
     id: home
     attributes:
-      label: "BioDigit HOME"
-      description: "Check once tasks are complete"
+      label: "ARGX-119-NIS-BDH"
+      description: "Check once screenshot is complete.  Keep the order exactly the same"
       options:
-        - label: Home screen before midnight on first day of deployment (thank you for participating...)
-        - label: Home screen showing Your assessments are due (day 2)
-        - label: Home screen after completing first questionairre
-        - label: Settings screen
+        - label: "Home screen before midnight on deployment day (no \"Your assessments are due\" message\") \"Thank you for participating! Please remember to wear your sensors.\""
+        - label: "Home screen showing \"Your assessments are due\" message"
+        - label: "Home screen after completing first questionairre \"Your assessments will be available in 24 days\""
+        - label: "Settings screen.  Brightness: High, Notififaction Volume: Medium"
         - label: Volume dialog on settings screen
         - label: Brightness dialog on settings screen
         - label: Your assessments are due dialog
-        - label: Questionnaire menu with MG-ADL-PRO
-        - label: Dialog showing These clinical questionairres must be completed over the phone
-        - label: Questionnaire menu with MGADL, EQ-5D-5L, PROMIS GH, PROMIS Dyspnea
-        - label: Dialog for ... will be marked as completed in clinic
-        - label: Unknown error dialog
-        - label: No assessments available dialog
-        - label: Assessment complete dialog (no score)
+        - label: Questionnaire menu with MG-ADL-PRO Not Completed
+        - label: "Dialog showing \"These clinical questionairres must be completed over the phone...\""
+        - label: "Questionnaire menu with MGADL, EQ-5D-5L, PROMIS GH, PROMIS Dyspnea showing and the \"Completed in clinic\" button"
+        - label: "Dialog showing \"MG-ADL, EQ-5D-5L, PROMIS Dyspnea, and PROMIS GH will be marked as completed in Clinic\""
+        - label: "Unknown error dialog. \"An unknown error has occured, please try again. If the error persists, please contact your study site.\""
+        - label: "No assessments available dialog.  \"No assessments currently available.  Please check back in 24 days.\" Make sure it's 24 days" 
+        - label: "MG-ADL PRO Assessment Complete dialog"
         - label: PIN recovery screen with invalid recovery code, please enter 6 digit, and your pin codes dont match
-        - label: PIN recovery error dialog Please enter a valid recovery code and please enter a 6-digit numeric PIN code
-        - label: PIN recovery page without inputs
+        - label: "PIN recovery error dialog \"Please enter a valid recovery code\" AND \"Please enter a 6-digit numeric PIN code\""
+        - label: PIN recovery page without inputs filled in
+        - label: "PIN code entry error \"Please enter your 6-digit numeric PIN code\""
         - label: PIN code recovery reset success dialog
         - label: PIN code entry screen (main entry screen, not recovery)
-        - label: PIN code error dialog (wrong pincode)
   - type: checkboxes
     id: clinic
     attributes:
-      label: "BioDigit CLINIC"
+      label: "ARGX-119-NIS-BDC"
       description: "Check once tasks are complete"
       options:
         - label: Login Screen
-        - label: Info Dialog
+        - label: Info Dialog (Ensure the email is help+ARGX-119-NIS-2301@biosensics.com  note the X)
         - label: Unknown Error has occured
-        - label: Create Account
+        - label: Create Account screen with no inputs filled in
         - label: Create Account Invalid Email, invalid temp pw, invalid pw, not matching pw
         - label: You have successfully created an account dialog
         - label: Please enter a valid temporary password dialog
         - label: An account with this email already exists dialog
-        - label: Please enter your verified email. must be 8 chars and include one number + your passwords do not match
-        - label: Reset Password screen
+        - label: "Error dialog showing: \"Please enter your verified email. Your password must be...\" AND \"Your passwords do not match.\""
+        - label: Reset Password screen with no inputs
         - label: Forgot password dialog
         - label: Thank you- temporary password has been sent dialog
         - label: You have successfully reset your password dialog
         - label: Please check your cellularl connection dialog
-        - label: Login screen
+        - label: Login screen with no inputs
         - label: You must create an account using your verified email and password dialog
-        - label: Login screen showing Please enter password that is at least 8 chars...
+        - label: "Login screen. enter \"support\" for email and any bad password"
         - label: Please enter a valid email and passsword dialog
         - label: New subject creation
         - label: Error dialog Please create a new subject
-        - label: New subject screen with text entered
+        - label: "New subject screen with text entered \"USAUS001\""
         - label: The subject ID already exists dialog
         - label: Start visit with subject dropdown expanded
         - label: Start visit with Visit dropdown expanded
         - label: Error the visit has already been completed dialog
         - label: Please select a subject ID and visit to begin a visit
-        - label: Home screen after starting visit
+        - label: Home screen after starting visit. Make sure it's USAUS001 and Baseline
         - label: Are you sure dialog after trying to LOGOUT without completing all tasks
         - label: Same dialog but trying to END VISIT without copmleting all tasks
         - label: Questionairre menu
         - label: Assessment has already been completed dialog
         - label: Questionnaire score dialog, are you sure you want to submit?
-        - label: Retry justification dialog
-        - label: Are you sure you want to submit (no score)
+        - label: Retry justification dialog on MG-ADL
+        - label: Are you sure you want to submit on MG-ADL-PRO
         - label: Speech assessment menu
-        - label: Counting test instructions
-        - label: Please plug in external microphone
-        - label: Counting instruction countdown
-        - label: Counting test
-        - label: The microphone was unplugged during test
-        - label: Retry justification for counting test
-        - label: Same as above but with all syllable repetitions
-        - label: Visit complete dialog
-        - label: Inactivity warning dialog
-        - label: Sensor information
+        - label: "Counting 1 to 50: Instructions"
+        - label: "Counting 1 to 50: Please plug in external microphone"
+        - label: "Counting 1 to 50: Countdown timer"
+        - label: "Counting 1 to 50: During Test"
+        - label: "Counting 1 to 50: Mic was unplugged during test"
+        - label: "Repetition - La La La: Retry justification - no input"
+        - label: "Repetition - La La La: Retry justification - with input \"Microphone\""
+        - label: "Counting 1 to 50: Assessment Complete, are you sure you want to complete?"
+        - label: "Syllable Repeition tests menu"
+        - label: "This assessment has already been completed dialog over the Speech Assessments main menu (not syllable)"
+        - label: "Repetition - Me - Me -Me: Instructions"
+        - label: "Repetition - Me - Me -Me: Countdown"
+        - label: "Repetition - Me - Me -Me: During Test"
+        - label: "Repetition - Me - Me -Me: Are you sure you want to complete the assessment?"
+        - label: "Repetition - La - La -La: Instructions"
+        - label: "Repetition - La - La -La: Countdown"
+        - label: "Repetition - La - La -La: During Test"
+        - label: "Repetition - Ta - Ta -Ta: Instructions"
+        - label: "Repetition - Ta - Ta -Ta: Countdown"
+        - label: "Repetition - Ta - Ta -Ta: During Test"
+        - label: "Repetition - Ka - Ka -Ka: Instructions"
+        - label: "Repetition - Ka - Ka -Ka: Countdown"
+        - label: "Repetition - Ka - Ka -Ka: During Test"
+        - label: "Repetition - Pa - Ta -Ka: Instructions"
+        - label: "Repetition - Pa - Ta -Ka: Countdown"
+        - label: "Repetition - Pa - Ta -Ka: During Test"
+        - label: "Visit complete dialog over PA TA KA"
+        - label: "Inactivity warning dialog over the Main Menu"
+        - label: Sensor information - no inputs
         - label: Error dialog on sensor information because invalid sensor ID
-        - label: The hand dropdown on sensor information
+        - label: Sensor information - all valid inputs and Domininant hand dropdown opened
         - label: Error dialog Please complete all fields before submitting
         - label: Confirmation dialog on the sensor information submit
-        - label: Error dialog for this module has already been completed
+        - label: Error dialog for this module has already been completed by YYXXX123 for 3 month visit
         - label: Subject has completed the baseline visit dialog
         - label: Settings screen
         - label: Brightness dialog on settings screen
-        - label: Language dropdown 
-        - label: Support dialog on Settings screen
+        - label: Language dropdown opened
+        - label: Support dialog on Settings screen - Make sure email is help+ARGX-119-NIS-2301@biosensics.com
         
         
+  - type: checkboxes
+    id: adl-pro
+    attributes:
+      label: "MG-ADL PRO"
+      description: "Check once screenshot is complete.  Keep the order exactly the same"
+      options:
+        - label: "Title screen"
+        - label: "Question 1: Talking - no selection"
+        - label: "Question 2: Chewing - no selection"
+        - label: "Question 3: Swallowing - no selection"
+        - label: "Question 4: Breathing - no selection"
+        - label: "Question 5: brush teeh and hair - no selection"
+        - label: "Question 6: Chair rising - no selection"
+        - label: "Question 7: Double Vision - no selection"
+        - label: "Question 8: Eyelids - no selection"
+        - label: "\"For any information\" screen"
+        - label: "Assessment complete dialog: Score 0"
+        - label: "Question 2: A selection is required error dialog"
+
+  - type: checkboxes
+    id: eq-5d-5l
+    attributes:
+      label: "EQ-5D-5L"
+      description: "Check once screenshot is complete.  Keep the order exactly the same"
+      options:
+        - label: "Title screen"
+        - label: "Question 1: Mobility - no selection"
+        - label: "Question 2: Self Care - no selection"
+        - label: "Question 3: Usual Activities - no selection"
+        - label: "Question 4: Pain/Discomfort - no selection"
+        - label: "Question 5: Anxiety/Depression - no selection"
+        - label: "Pain Scale at 1"
+        - label: "Pain Scale error dialog: A selection is required"
+        - label: "Assessment complete dialog Score of 5"
+        - label: "Mobility error dialog: A selection is required"
+
+  - type: checkboxes
+    id: promis-gh
+    attributes:
+      label: "PROMIS GH"
+      description: "Check once screenshot is complete.  Keep the order exactly the same"
+      options:
+        - label: "Title screen"
+        - label: "Question 1: General health - no selection"
+        - label: "Question 2: Quality of life - no selection"
+        - label: "Question 3: Physical health - no selection"
+        - label: "Question 4: Mental health - no selection"
+        - label: "Question 5: Social health - no selection"
+        - label: "Question 6: Social activities - no selection"
+        - label: "Question 7: Physical activities - no selection"
+        - label: "Question 8: Emotional problems - no selection"
+        - label: "Question 9: Fatigue - no selection"
+        - label: "Question 10: Pain scale - no selection"
+
+
+  - type: checkboxes
+    id: promis-dys
+    attributes:
+      label: "PROMIS Dyspnea"
+      description: "Check once screenshot is complete.  Keep the order exactly the same"
+      options:
+        - label: "Title screen"
+        - label: "Question 1: Dressing - no selection"
+        - label: "Question 2: Walking - no selection"
+        - label: "Question 3: Stairs - no selection"
+        - label: "Question 4: Meals - no selection"
+        - label: "Question 5: Dishes - no selection"
+        - label: "Question 6: Sweepin' - no selection"
+        - label: "Question 7: Bed makin' - no selection"
+        - label: "Question 8: Lifting heavy groceries - no selection"
+        - label: "Question 9: Carrying heavy groceries - no selection"
+        - label: "Question 10: Walking fast - no selection"
+        - label: "Question 1: Dressing- a selection is required error dialog"
+        - label: "Question 10: Are you sure you want to submit dialog"
