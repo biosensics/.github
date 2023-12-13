@@ -4,6 +4,7 @@ title: "[Software Release Request]: "
 labels: ["request"]
 assignees: 
   - JulieMcLarnon
+  - jcarlosbarbosa
 
 body:
   - type: textarea
