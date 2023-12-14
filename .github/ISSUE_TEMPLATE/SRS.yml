@@ -48,6 +48,12 @@ body:
       label: Developer Tasks
       description: "In this section, the software team should list out all technical tasks required to satisfy this requirement section. These can be split up into groups based on logical or architectural groupings and can link to issues that detail some requirement."
       placeholder: "Add items here"
+      value: |
+        ## Backend
+        - Update schema to add some new field
+        - Modify report to include something
+        ## Frontend
+        - Update alignment of popup text
     validations:
       required: true
 
