@@ -35,6 +35,10 @@ body:
     attributes:
       label: References
       description: "Provide a link to the relevant SRS or any other document for reference"
+      value: |
+        - Reference 1
+        - Reference 2
+        - Reference 3
     validations:
       required: true
 
