@@ -42,7 +42,7 @@ body:
     id: developer-tasks
     attributes:
       label: Developer Tasks
-      description: "In this section, the software team shoudl list out all technical tasks required to satisfy this requirement section. These can be split up into groups based on logical or architectural groupings and can link to issues that detail some requirement."
+      description: "In this section, the software team should list out all technical tasks required to satisfy this requirement section. These can be split up into groups based on logical or architectural groupings and can link to issues that detail some requirement."
       placeholder: "Add items here"
     validations:
       required: true
