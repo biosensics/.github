@@ -1,22 +1,14 @@
 name: SRS Section
 description: Template for creating issues related to Section 5 of the SRS.
-title: "SRS Section x.x"
-labels: ["SRS"]
-assignees: []
+title: "<Project>: Section x.y"
+labels: []
+assignees:
+  - juliemclarnon
 
 body:
   - type: markdown
     attributes:
       value: "Please fill out this template to ensure a thorough review of the issue related to the SRS Section"
-
-  - type: input
-    id: title
-    attributes:
-      label: Issue Title
-      description: "Provide a concise title for the issue."
-      placeholder: "Title"
-    validations:
-      required: true
 
   - type: textarea
     id: summary
@@ -43,7 +35,7 @@ body:
       description: "Mark these checkboxes as complete as these are completed."
       options:
         - label: Create subissues for detailed tasks
-        - label: Estimate level of effort
+        - label: Fill out issue fields
         - label: Assign to team members
         - label: Link to relevant SRS documents
 
@@ -63,15 +55,3 @@ body:
       description: "Add any additional comments or notes regarding this issue."
       placeholder: "Add comments here."
 
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: "Select the priority of this issue."
-      options:
-        - Low
-        - Medium
-        - High
-        - Critical
-    validations:
-      required: true
