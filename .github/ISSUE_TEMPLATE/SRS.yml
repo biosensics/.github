@@ -19,15 +19,6 @@ body:
     validations:
       required: true
 
-  - type: textarea
-    id: subsection-details
-    attributes:
-      label: Subsection Details
-      description: "Detail the specific subsections of the SRS Section related to this issue."
-      placeholder: "Detail the subsections here."
-    validations:
-      required: true
-
   - type: checkboxes
     id: tasks
     attributes:
@@ -39,12 +30,20 @@ body:
         - label: Assign to team members
         - label: Link to relevant SRS documents
 
-  - type: input
+  - type: textarea
     id: srs-link
     attributes:
-      label: Link to SRS Document
-      description: "Provide a link to the relevant SRS document for reference."
-      placeholder: "http://"
+      label: References
+      description: "Provide a link to the relevant SRS or any other document for reference"
+    validations:
+      required: true
+
+  - type: textarea
+    id: developer-tasks
+    attributes:
+      label: Developer Tasks
+      description: "In this section, the software team shoudl list out all technical tasks required to satisfy this requirement section. These can be split up into groups based on logical or architectural groupings and can link to issues that detail some requirement."
+      placeholder: "Add items here"
     validations:
       required: true
 
