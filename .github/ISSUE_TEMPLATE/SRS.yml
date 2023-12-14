@@ -50,10 +50,10 @@ body:
       placeholder: "Add items here"
       value: |
         ## Backend
-        - Update schema to add some new field
-        - Modify report to include something
+        [ ] Update schema to add some new field
+        [ ] Modify report to include something
         ## Frontend
-        - Update alignment of popup text
+        [ ] Update alignment of popup text
     validations:
       required: true
 
