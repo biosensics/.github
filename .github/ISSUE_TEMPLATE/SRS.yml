@@ -10,12 +10,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## System Requirements Specification Section 5.n
-
-        ### Issue Description
-        Provide a description of the Requirement.  This should be a brief summary explaining the scope of this requirement section
-
-        ### Example
+        ## Issue Template for System Requirements Specification
+        This template is designed to create issues related to specific sections of the System Requirements Specification (SRS). Follow the structure below to ensure all relevant information is included.
 
   - type: textarea
     id: summary
@@ -23,44 +19,27 @@ body:
       label: Summary of System Requirements Specification Section
       description: "Summarize the relevant part of the System Requirements Specification for this issue."
       placeholder: "Provide a brief summary of the requirement here."
-      value: <!--- Summarize the relevant part of the System Requirements Specification for this issue. -->
     validations:
       required: true
-
-  - type: markdown
-    attributes:
-      value: |
-        ### References
-        Provide a link to the relevant System Requirements Specification or any other documents for reference.  If possible these should be valid links.
-
-        ### Example
-        - [SRS](https://github.com/biosensics)
-        - [Whimsical/Figma](https://whimsical.com/)
-        - [QMG Form](https://myasthenia.org/Portals/0/QMG.pdf)
 
   - type: textarea
     id: srs-link
     attributes:
       label: References
       description: "Please add references here"
+      placeholder: "e.g., [SRS Document](https://example.com/srs), [Related Issue](https://example.com/issue)"
     validations:
       required: true
-
 
   - type: markdown
     attributes:
       value: |
-        ### Developer Tasks
-        In this section, the software team should list out all technical tasks required to satisfy this requirement section. These can be split up into groups based on logical or architectural groupings and can link to issues that detail some requirement.
+        #### Example
+        - [SRS Document](https://example.com/srs)
+        - [QMG Form](https://myasthenia.org/Portals/0/QMG.pdf)
 
-        ### Example
-        ## Backend
-        - [ ] Update schema to add some new field
-        - [ ] Modify report to include something
-        ## Frontend
-        - [ ] Update alignment of popup text
-        - [ ] Add new button to the UI
-
+        ---
+  
   - type: textarea
     id: developer-tasks
     attributes:
@@ -69,6 +48,19 @@ body:
       placeholder: "Add items here"
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        #### Example
+        ##### Backend
+        - [ ] Update schema to add some new field
+        - [ ] Modify report to include something
+        ##### Frontend
+        - [ ] Update alignment of popup text
+        - [ ] Add new button to the UI
+        
+        ---
 
   - type: textarea
     id: additional-comments
