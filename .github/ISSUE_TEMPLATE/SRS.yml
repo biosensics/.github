@@ -1,44 +1,34 @@
-name: SRS Section
-description: Template for creating issues related to Section 5 of the SRS.
-title: "<Project>: Section x.y"
+name: System Requirements Specification Group Issue
+description: Template for creating issues related to Section 5 of the System Requirements Specification.
+title: "<Project>: Section 5.n"
 labels: []
+projects: "biosensics/64"
 assignees:
-  - juliemclarnon
+  - @biosensics/project-managers
 
 body:
   - type: markdown
     attributes:
-      value: "Please fill out this template to ensure a thorough review of the issue related to the SRS Section"
+      value: "Please fill out this template to ensure a thorough review of the issue related to the System Requirements Specification"
 
   - type: textarea
     id: summary
     attributes:
-      label: Summary of SRS Section
-      description: "Summarize the relevant part of the SRS for this issue."
+      label: Summary of System Requirements Specification Section
+      description: "Summarize the relevant part of the System Requirements Specification for this issue."
       placeholder: "Provide a brief summary of the relevant SRS section here."
     validations:
       required: true
-
-  - type: checkboxes
-    id: tasks
-    attributes:
-      label: Tasks
-      description: "Mark these checkboxes as complete as these are completed."
-      options:
-        - label: Create subissues for detailed tasks
-        - label: Fill out issue fields
-        - label: Assign to team members
-        - label: Link to relevant SRS documents
 
   - type: textarea
     id: srs-link
     attributes:
       label: References
-      description: "Provide a link to the relevant SRS or any other document for reference"
+      description: "Provide a link to the relevant SRS or any other documents for reference.  If possible these should be valid links."
       value: |
-        - Reference 1
-        - Reference 2
-        - Reference 3
+        - [SRS](https://github.com/biosensics)
+        - [Whimsical/Figma](https://whimsical.com/)
+        - [QMG Form](https://myasthenia.org/Portals/0/QMG.pdf)
     validations:
       required: true
 
