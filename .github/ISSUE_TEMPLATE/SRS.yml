@@ -53,10 +53,11 @@ body:
     attributes:
       value: |
         #### Example
-        ##### Backend
+        
+        #### Backend
         - [ ] Update schema to add some new field
         - [ ] Modify report to include something
-        ##### Frontend
+        #### Frontend
         - [ ] Update alignment of popup text
         - [ ] Add new button to the UI
         
