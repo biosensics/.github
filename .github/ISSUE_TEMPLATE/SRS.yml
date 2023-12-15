@@ -4,7 +4,7 @@ title: "<Project>: Section 5.n"
 labels: []
 projects: "biosensics/64"
 assignees:
-  - @biosensics/project-managers
+  - "@biosensics/project-managers"
 
 body:
   - type: markdown
