@@ -52,7 +52,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        #### Example
+       Example:
         
         #### Backend
         - [ ] Update schema to add some new field
