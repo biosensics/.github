@@ -2,7 +2,7 @@ name: System Requirements Specification Group Issue
 description: Template for creating issues related to Section 5 of the System Requirements Specification.
 title: "<Project>: Section 5.n"
 labels: []
-projects: "biosensics/64"
+projects: "biosensics/67"
 assignees:
   - "juliemclarnon"
 
