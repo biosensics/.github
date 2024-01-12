@@ -47,7 +47,7 @@ body:
       - label: v-and-v
       - label: uat
       - label: production
-  -   - type: markdown
+      - type: markdown
     attributes:
       value: To be completed by the requestor once the request has been complete, then the requestor can close the issue. 
   - type: checkboxes
