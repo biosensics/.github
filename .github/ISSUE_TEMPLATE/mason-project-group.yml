@@ -47,11 +47,15 @@ body:
       - label: v-and-v
       - label: uat
       - label: production
+  -   - type: markdown
+    attributes:
+      value: To be completed by the requestor once the request has been complete, then the requestor can close the issue. 
   - type: checkboxes
+    id: confirm-testing
     attributes:
       label: Completion Checklist
       description: The assignee should check off each item as it is completed.
-      options:
+       options:
       - label: Mason Projects Created
       - label: Mason Groups Created
-      - label: Mason Project build configs deployed, to the appropriate groups
+      - label: Mason Project build configs deployed, to the appropriate groups 
