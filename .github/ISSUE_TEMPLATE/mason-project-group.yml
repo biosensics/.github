@@ -15,7 +15,9 @@ body:
     attributes:
       label: |
         "A member of @biosensics/engineering may follow [BS-03-0048](https://biosenics.greenlight.guru/documents/6b42b337-2f77-4c43-b784-ef856b9b4131/effective-doc) to make the Mason groups/projects.
-        \n Project Creation
+        
+        
+        Project Creation
         Must match the application id, replacing underscores for hyphens. Then a hyphen followed by the instance of the project.
         For example:
         Raw Project Name: `BioDigit-MG`
