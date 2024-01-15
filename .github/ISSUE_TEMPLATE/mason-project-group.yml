@@ -48,6 +48,7 @@ body:
       - label: uat
       - label: production
   - type: checkboxes
+    id: confirm-testing
     attributes:
       label: Completion Checklist
       description: The assignee should check off each item as it is completed.
