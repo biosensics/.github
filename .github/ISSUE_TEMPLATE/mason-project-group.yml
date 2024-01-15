@@ -6,29 +6,28 @@ body:
   - type: input
     id: project
     attributes:
-      label: Create the new projects and group for project
+      label: Create the new projects and group for the project
       placeholder: "BioDigit-MG"
     validations:
       required: true
   - type: textarea
     id: instructions
     attributes:
-      label: A member of @biosensics/engineering may follow [BS-03-0048](https://biosenics.greenlight.guru/documents/6b42b337-2f77-4c43-b784-ef856b9b4131/effective-doc) to make the Mason groups/projects.
-      description: "
-        ## Project Creation
+      label: ""A member of @biosensics/engineering may follow [BS-03-0048](https://biosenics.greenlight.guru/documents/6b42b337-2f77-4c43-b784-ef856b9b4131/effective-doc) to make the Mason groups/projects.
+        Project Creation
         Must match the application id, replacing underscores for hyphens. Then a hyphen followed by the instance of the project.
         For example:
         Raw Project Name: `BioDigit-MG`
         Application ID: `.biodigit_mg`
         Test Project: `BioDigit-MG-TEST`
-        Production Project: `BioDigit-MG`"
-      placeholder: "Any aditional information"
+        Production Project: `BioDigit-MG`""
+      placeholder: "Any additional information"
     validations:
       required: false
   - type: checkboxes
     attributes:
       label: Create the projects for
-      description: Please select all instaces of the project to create
+      description: Please select all instances of the project to create
       options:
       - label: TEST
       - label: UAT
@@ -37,11 +36,11 @@ body:
     attributes:
       value: |
         ## Group Creation 
-        See the work instruction, on 5.4
+        See the work instructions, on 5.4
   - type: checkboxes
     attributes:
       label: Create the groups for
-      description: Please select all instaces of the groups to create
+      description: Please select all instances of the groups to create
       options:
       - label: develop
       - label: v-and-v
