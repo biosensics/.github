@@ -34,19 +34,6 @@ body:
       placeholder: Confirmed that the play bar does indeed obscure the video and the playbar needs to be moved down a half an inch
     validations:
       required: true
-  - type: dropdown
-    attributes:
-      label: Severity level
-      description: 1- a V&V will not be run for this issue alone. 2- Want to have 3- Causing minor impact to study/participant 4- Causing big impact to study/participant 5- BAD BAD BAD
-      multiple: false
-      options:
-        - "1 - not impacting participants"
-        - 2
-        - "3 - minor impact"
-        - 4
-        - "5 - crisis"
-    validations:
-     required: true
   - type: textarea
     attributes:
       label: Additional Context
