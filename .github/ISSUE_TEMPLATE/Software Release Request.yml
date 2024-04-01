@@ -13,19 +13,6 @@ body:
       description: "Reason for request"
     validations:
       required: true
-  - type: dropdown
-    attributes:
-      label: Priority level
-      description: Indicate priority level
-      multiple: false
-      options:
-        - "1 - Within the next month"
-        - 2
-        - "3 - Within 2 weeks"
-        - 4
-        - "5 - URGENT"
-    validations:
-     required: true
   - type: textarea
     attributes:
       label: Specific due date?
