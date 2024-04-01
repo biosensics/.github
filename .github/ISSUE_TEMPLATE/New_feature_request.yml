@@ -31,19 +31,6 @@ body:
       description: "Please be specific what the UI should be - size, color, shape, location, etc."
     validations:
       required: true
-  - type: dropdown
-    attributes:
-      label: Priority level
-      description: How urgent is this new feature?
-      multiple: false
-      options:
-        - "1 - nice to have"
-        - 2
-        - "3 - needed"
-        - 4
-        - "5 - crisis"
-    validations:
-     required: true
   - type: textarea
     attributes:
       label: Additional Context
