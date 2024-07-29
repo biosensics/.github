@@ -1,0 +1,18 @@
+name: "Development Template"
+description: "Template for dev to use in project issue breakdown"
+
+body:
+  - type: textarea
+    attributes:
+      label: What work needs to be done?
+  - type: textarea
+    attributes:
+      label: Acceptance Criteria:
+  - type: textarea
+    attributes:
+      label: Implementation Details:
+  - type: textarea
+    attributes:
+      label: Additional information:
+
+    
