@@ -1,3 +1,6 @@
+name: "Development Template"
+description: "Software development template for project issue breakdown"
+
 body:
   - type: textarea
     attributes:
