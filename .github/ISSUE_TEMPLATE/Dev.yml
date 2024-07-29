@@ -4,6 +4,9 @@ description: "Template for dev to use in project issue breakdown"
 body:
   - type: textarea
     attributes:
+      label: Depends on
+  - type: textarea
+    attributes:
       label: What work needs to be done?
   - type: textarea
     attributes:
