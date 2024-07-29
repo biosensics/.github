@@ -7,12 +7,12 @@ body:
       label: What work needs to be done?
   - type: textarea
     attributes:
-      label: Acceptance Criteria:
+      label: Acceptance Criteria
   - type: textarea
     attributes:
-      label: Implementation Details:
+      label: Implementation Details
   - type: textarea
     attributes:
-      label: Additional information:
+      label: Additional information
 
     
