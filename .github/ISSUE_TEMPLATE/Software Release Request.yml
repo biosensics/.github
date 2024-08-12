@@ -3,10 +3,7 @@ description: "Checklist for Software Version Release"
 title: "[Software Release Request]: "
 labels: ["request"]
 assignees: 
-  - JulieMcLarnon
   - jcarlosbarbosa
-
-[Link to ECOs in progress](https://biosensics.app.box.com/folder/279871072773)
 
 body:
   - type: textarea
