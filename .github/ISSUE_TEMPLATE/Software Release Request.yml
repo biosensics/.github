@@ -6,6 +6,16 @@ assignees:
   - jcarlosbarbosa
 
 body:
+  - type: markdown
+    attributes:
+      value: |
+        [Link to ECO In Progress Folder](https://biosensics.app.box.com/folder/279871072773)
+  - type: textarea
+    attributes:
+      label: What is the ECO number?
+      description: "ECO Number"
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Please describe the change being requested for this software version
