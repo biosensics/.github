@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         [Link to ECO In Progress Folder](https://biosensics.app.box.com/folder/279871072773)
-  - type: textarea
+  - type: input
     attributes:
       label: What is the ECO number?
       description: "ECO Number"
