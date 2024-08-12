@@ -6,8 +6,8 @@ assignees:
   - jcarlosbarbosa
 
 body:
- - type: textarea
-   attributes:
+  - type: textarea
+    attributes:
       label: Please describe the change being requested for this software version
       description: "Reason for request"
     validations:
