@@ -7,28 +7,24 @@ assignees:
 
 body:
   - type: checkboxes
-    id: lead
     attributes:
       label: "Operations"
       description: "Check once tasks are complete"
       options:
         - label: Request an ECO number and complete Section I
   - type: checkboxes
-    id: submit
     attributes:
       label: "Engineering"
       description: "Check once tasks are complete"
       options:
         - label: Complete Section II of the ECO
   - type: checkboxes
-    id: submit
     attributes:
       label: "Test"
       description: "Check once tasks are complete"
       options:
         - label: Complete Section III of the ECO
   - type: checkboxes
-    id: quality
     attributes:
       label: "Quality"
       description: "Check once tasks are complete"
@@ -43,7 +39,6 @@ body:
         - label: Equipment set up for V&V execution (Details on parse account login, Device info - OS version, model name, build number)
 
   - type: checkboxes
-    id: executed
     attributes:
       label: "Test Engineering"
       description: "Check once tasks are complete"
