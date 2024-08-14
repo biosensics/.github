@@ -4,40 +4,42 @@ title: "[V&V]: "
 labels: ["checklist"]
 assignees: 
   - jcarlosbarbosa
-  - juliemclarnon
 
 body:
   - type: checkboxes
     id: lead
     attributes:
-      label: "Test Engineering"
+      label: "Operations"
       description: "Check once tasks are complete"
       options:
-        - label: Team lead determine if full or partial V&V is needed
+        - label: Request an ECO number and complete Section I
   - type: checkboxes
     id: submit
     attributes:
       label: "Engineering"
       description: "Check once tasks are complete"
       options:
-        - label: Submit application ECO to Quality 
-        - label: Submit server ECO to Quality 
+        - label: Complete Section II of the ECO
+  - type: checkboxes
+    id: submit
+    attributes:
+      label: "Test"
+      description: "Check once tasks are complete"
+      options:
+        - label: Complete Section III of the ECO
   - type: checkboxes
     id: quality
     attributes:
       label: "Quality"
       description: "Check once tasks are complete"
       options:
-        - label: Application ECO approved 
-        - label: Server ECO approved 
+        - label: ECO approved 
   - type: checkboxes
     id: ops
     attributes:
       label: "Operations"
       description: "Check once tasks are complete"
       options:
-        - label: Device enrolled in MDM (as applicable)
-        - label: Parse account created in correct server (as applicable)
         - label: Equipment set up for V&V execution (Details on parse account login, Device info - OS version, model name, build number)
 
   - type: checkboxes
