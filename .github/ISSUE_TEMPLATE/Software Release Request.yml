@@ -10,6 +10,7 @@ body:
     attributes:
       value: |
         [Link to ECO In Progress Folder](https://biosensics.app.box.com/folder/279871072773)
+        "Note: For older projects with separate Application and Server repos, please open and link two separate V&V Execution Checklists, one for each ECO. In this case, the "Test Engineering - Execute V&V" task shall be crossed out on the Server V&V Execution Checklist."
   - type: input
     attributes:
       label: What is the ECO number?
