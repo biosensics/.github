@@ -23,7 +23,7 @@ body:
       label: "Test"
       description: "Check once tasks are complete"
       options:
-        - label: Complete Section III of the ECO
+        - label: Complete Section IIA of the ECO
   - type: checkboxes
     attributes:
       label: "Quality"
