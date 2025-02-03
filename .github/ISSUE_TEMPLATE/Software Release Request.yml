@@ -74,6 +74,7 @@ body:
       options:
         - label: Software release created and tagged 
         - label: Server deployed to production
+        - label: Scale down test server
   - type: checkboxes
     id: room
     attributes:
