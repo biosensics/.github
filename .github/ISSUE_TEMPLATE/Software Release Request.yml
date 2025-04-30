@@ -75,6 +75,7 @@ body:
         - label: Software release created and tagged 
         - label: Server deployed to production
         - label: Scale down test server
+        - label: Releases initiated for Release Canidate modules
   - type: checkboxes
     id: room
     attributes:
