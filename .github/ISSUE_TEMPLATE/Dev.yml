@@ -4,18 +4,19 @@ description: "Software development template for project issue breakdown"
 body:
   - type: textarea
     attributes:
-      label: Depends on
+      label: Open Questions
+      description: Questions that need to be answered before work can begin (e.g. Product decisions, Stakeholder decisions, etc.)
   - type: textarea
     attributes:
       label: What work needs to be done?
+      description: A detailed description of the work that needs to be done, including any relevant information or context. This should be as specific as possible to ensure that the work can be completed efficiently and effectively.
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Acceptance Criteria
+      description: A list of specific criteria that must be met in order for the work to be considered complete. This should include any relevant information or context, such as expected behavior, performance requirements, or user experience considerations.
   - type: textarea
     attributes:
       label: Implementation Details
-  - type: textarea
-    attributes:
-      label: Additional information
-
-    
+      description: A detailed description of how the work will be implemented, including any relevant information or context. This should include any technical details, such as programming languages, frameworks, or tools that will be used, as well as any relevant design considerations or constraints.
